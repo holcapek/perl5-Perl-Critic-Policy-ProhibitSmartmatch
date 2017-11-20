@@ -21,20 +21,6 @@ ABSTRACT
         'Perl::Critic::Utils'  => 0,
         'Readonly'             => 0,
     },
-    pm_files => [
-        qw(
-          lib/Perl/Critic/Policy/ProhibitSmartmatch.pm
-          lib/Perl/Critic/Policy/Operators/ProhibitSmartmatch.pm
-          lib/Perl/Critic/Policy/ConstrolStructures/ProhibitSwitchStatements.pm
-          )
-    ],
-    test_files => [
-        qw(
-          t/00_compile.t
-          t/01_smartmatch_operator.t
-          t/02_switch_statements.t
-          )
-    ],
 );
 
 $build->create_build_script;
