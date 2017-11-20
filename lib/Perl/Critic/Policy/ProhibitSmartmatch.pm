@@ -1,6 +1,6 @@
 package Perl::Critic::Policy::ProhibitSmartmatch;
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 =encoding utf-8
 
