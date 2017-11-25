@@ -1,6 +1,9 @@
 package Perl::Critic::Policy::ProhibitSmartmatch;
 
-our $VERSION = '0.2';
+# To keep Perl::Critic from complaining about this documentation
+use parent 'Perl::Critic::Policy';
+
+our $VERSION = '0.21';
 
 =encoding utf-8
 
@@ -20,4 +23,6 @@ Jan Holcapek E<lt>holcapek@gmail.comE<gt>, who was heavily inspired by the work 
 hisaichi5518 E<lt>hisada.kazuki@gmail.comE<gt>
 
 =cut
+
+1;
 
