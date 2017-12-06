@@ -7,3 +7,5 @@ t/03_any_smartmatch.t
 lib/Perl/Critic/Policy/ProhibitSmartmatch.pm
 lib/Perl/Critic/Policy/ControlStructures/ProhibitSwitchStatements.pm
 lib/Perl/Critic/Policy/Operators/ProhibitSmartmatch.pm
+META.yml
+META.json
