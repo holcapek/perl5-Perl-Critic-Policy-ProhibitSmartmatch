@@ -11,7 +11,7 @@ use Perl::Critic::Utils qw{ :severities };
 use Perl::Critic::Policy::Operators::ProhibitSmartmatch;
 use Perl::Critic::Policy::ControlStructures::ProhibitSwitchStatements;
 
-our $VERSION = '0.3';
+our $VERSION = '0.4';
 
 Readonly::Scalar my $DESC => q{Implicit or explicit smartmatch used};
 Readonly::Scalar my $EXPL => q{Avoid using implicit and explicit smartmatch};
