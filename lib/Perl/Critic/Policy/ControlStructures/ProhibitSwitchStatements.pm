@@ -35,14 +35,14 @@ sub violates {
     my ( $self, $elem, undef ) = @_;
 
     return $self->violation( $DESC, $EXPL, $elem )
-      if ( $elem->parent->class eq 'PPI::Statement::Given'
+        if ( $elem->parent->class eq 'PPI::Statement::Given'
         || $elem->parent->class eq 'PPI::Statement::When' )
-      && $elem->class eq 'PPI::Token::Word';
+        && $elem->class eq 'PPI::Token::Word';
 
     return $self->violation( $DESC, $EXPL, $elem )
-      if $elem->parent->class eq 'PPI::Statement'
-      && $elem->content =~ m{CORE::(?:given|when|default)}
-      && $elem->class eq 'PPI::Token::Word';
+        if $elem->parent->class eq 'PPI::Statement'
+        && $elem->content =~ m{CORE::(?:given|when|default)}
+        && $elem->class eq 'PPI::Token::Word';
 
     return;
 }

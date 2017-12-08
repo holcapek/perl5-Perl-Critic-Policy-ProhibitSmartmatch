@@ -4,8 +4,7 @@ use warnings;
 use Test::More;
 use Perl::Critic::TestUtils qw(pcritique);
 
-my @switch_keywords =
-  qw( given when default CORE::given CORE::when CORE::default );
+my @switch_keywords = qw( given when default CORE::given CORE::when CORE::default );
 
 my $test_set = {
     'in single quotes' => [ map qq{ '$_' }, @switch_keywords ],
@@ -20,8 +19,7 @@ foreach my $test_case ( keys %{$test_set} ) {
     $code .= " $_ => 1, " foreach @{ $test_set->{$test_case} };
     $code .= ');';
 
-    is( pcritique( 'ControlStructures::ProhibitSwitchStatements', \$code, ),
-        0 );
+    is( pcritique( 'ControlStructures::ProhibitSwitchStatements', \$code, ), 0 );
 
 }
 

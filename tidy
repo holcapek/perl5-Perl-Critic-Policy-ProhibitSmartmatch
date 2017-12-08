@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find -name '*.pm' -or -name '*.t' \
+	| xargs perltidy

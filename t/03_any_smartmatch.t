@@ -20,12 +20,6 @@ CORE::given ($foo) {
 }
 __CODE__
 
-is(
-    pcritique(
-        'ProhibitSmartmatch',
-        \$code
-    ),
-    7
-);
+is( pcritique( 'ProhibitSmartmatch', \$code ), 7 );
 
 done_testing;

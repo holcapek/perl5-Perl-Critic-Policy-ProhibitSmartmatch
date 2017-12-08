@@ -1,6 +1,5 @@
 package Perl::Critic::Policy::ProhibitSmartmatch;
 
-
 use strict;
 use warnings;
 
@@ -29,6 +28,7 @@ sub default_themes {
 }
 
 sub applies_to {
+
     # P::C::P::ControlStructures::ProhibitSwitchStatements
     #   applies to PPI::Token::Operator
     # P::C::P::Operators::ProhibitSmartmatch
@@ -40,7 +40,7 @@ sub applies_to {
 sub violates {
     my ( $self, $elem ) = @_;
 
-    my $p_o_ps = Perl::Critic::Policy::Operators::ProhibitSmartmatch->new;
+    my $p_o_ps   = Perl::Critic::Policy::Operators::ProhibitSmartmatch->new;
     my $p_cs_pss = Perl::Critic::Policy::ControlStructures::ProhibitSwitchStatements->new;
 
     my @violation;

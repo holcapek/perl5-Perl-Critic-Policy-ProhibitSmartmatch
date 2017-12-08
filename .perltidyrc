@@ -1,4 +1,7 @@
-#--perl-best-practices
+--perl-best-practices
+--maximum-line-length=100
+--converge
+
 --nostandard-output
 --backup-and-modify-in-place
 --backup-file-extension=/
