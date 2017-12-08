@@ -17,18 +17,18 @@ name: Perl-Critic-Policy-ProhibitSmartmatch
 provides:
   Perl::Critic::Policy::ControlStructures::ProhibitSwitchStatements:
     file: lib/Perl/Critic/Policy/ControlStructures/ProhibitSwitchStatements.pm
-    version: '0.1'
+    version: '0.2'
   Perl::Critic::Policy::Operators::ProhibitSmartmatch:
     file: lib/Perl/Critic/Policy/Operators/ProhibitSmartmatch.pm
     version: '0.2'
   Perl::Critic::Policy::ProhibitSmartmatch:
     file: lib/Perl/Critic/Policy/ProhibitSmartmatch.pm
-    version: '0.3'
+    version: '0.4'
 requires:
   Perl::Critic::Policy: '0'
   Perl::Critic::Utils: '0'
   Readonly: '0'
 resources:
   license: http://dev.perl.org/licenses/
-version: '0.3'
+version: '0.4'
 x_serialization_backend: 'CPAN::Meta::YAML version 0.018'

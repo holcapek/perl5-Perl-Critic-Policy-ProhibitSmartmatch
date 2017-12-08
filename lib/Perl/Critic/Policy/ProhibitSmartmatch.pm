@@ -1,6 +1,5 @@
 package Perl::Critic::Policy::ProhibitSmartmatch;
 
-
 use strict;
 use warnings;
 
@@ -11,7 +10,7 @@ use Perl::Critic::Utils qw{ :severities };
 use Perl::Critic::Policy::Operators::ProhibitSmartmatch;
 use Perl::Critic::Policy::ControlStructures::ProhibitSwitchStatements;
 
-our $VERSION = '0.3';
+our $VERSION = '0.4';
 
 Readonly::Scalar my $DESC => q{Implicit or explicit smartmatch used};
 Readonly::Scalar my $EXPL => q{Avoid using implicit and explicit smartmatch};
@@ -29,6 +28,7 @@ sub default_themes {
 }
 
 sub applies_to {
+
     # P::C::P::ControlStructures::ProhibitSwitchStatements
     #   applies to PPI::Token::Operator
     # P::C::P::Operators::ProhibitSmartmatch
@@ -40,7 +40,7 @@ sub applies_to {
 sub violates {
     my ( $self, $elem ) = @_;
 
-    my $p_o_ps = Perl::Critic::Policy::Operators::ProhibitSmartmatch->new;
+    my $p_o_ps   = Perl::Critic::Policy::Operators::ProhibitSmartmatch->new;
     my $p_cs_pss = Perl::Critic::Policy::ControlStructures::ProhibitSwitchStatements->new;
 
     my @violation;
